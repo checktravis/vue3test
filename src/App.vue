@@ -1,17 +1,16 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <InfoCard v-for="n in 10" :key="n"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import InfoCard from './components/InfoCard/InfoCard.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    InfoCard
   }
 }
 </script>
